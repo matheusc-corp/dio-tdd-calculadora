@@ -74,6 +74,11 @@ namespace CalculadoraTests
             calc.Somar(7, 7);
             calc.Somar(1, 45);
 
+            calc.Somar(1, 2);
+            calc.Somar(4, 2);
+            calc.Somar(7, 7);
+            calc.Somar(1, 45);
+
             var lista = calc.Historico();
 
             Assert.NotEmpty(lista);

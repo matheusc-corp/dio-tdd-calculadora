@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraTdd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8b3984ebe858b3aa297189f6fdbeafc2ed815f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f3aa24fbe3930fe03ee61968f57b42a589804e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraTdd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraTdd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
