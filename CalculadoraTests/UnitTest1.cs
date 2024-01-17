@@ -8,12 +8,20 @@ namespace CalculadoraTests
 {
     public class UnitTest1
     {
+        public Calculadora ConstruirClasse()
+        {
+            string data = "16/01/2024";
+            Calculadora calc = new Calculadora(data);
+
+            return calc;
+        }
+
         [Theory]
         [InlineData (1, 2, 3)]
         [InlineData(4, 5, 9)]
         public void TesteSomar(int val1, int val2, int resultado)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             int resultadoCalculadora = calc.Somar(val1, val2);
 
@@ -25,7 +33,7 @@ namespace CalculadoraTests
         [InlineData(4, 5, 20)]
         public void TesteMultiplicar(int val1, int val2, int resultado)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             int resultadoCalculadora = calc.Multiplicar(val1, val2);
 
@@ -37,7 +45,7 @@ namespace CalculadoraTests
         [InlineData(8, 5, 3)]
         public void TesteSubtrair(int val1, int val2, int resultado)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             int resultadoCalculadora = calc.Subtrair(val1, val2);
 
@@ -49,7 +57,7 @@ namespace CalculadoraTests
         [InlineData(18, 2, 9)]
         public void TesteDividir(int val1, int val2, int resultado)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             int resultadoCalculadora = calc.Dividir(val1, val2);
 
@@ -59,7 +67,7 @@ namespace CalculadoraTests
         [Fact]
         public void TestarDivisaoPorZero()
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             Assert.Throws<DivideByZeroException> (() => calc.Dividir(3, 0));
         }
@@ -67,7 +75,7 @@ namespace CalculadoraTests
         [Fact]
         public void TestarHistorico()
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = ConstruirClasse();
 
             calc.Somar(1, 2);
             calc.Somar(4, 2);
